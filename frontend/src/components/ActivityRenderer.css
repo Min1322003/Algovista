@@ -1,0 +1,24 @@
+.explore-graph .node circle{transition:fill .2s,stroke .2s,stroke-width .2s}
+.explore-graph .node.visited circle{fill:#e9e7ff;stroke:#6557e8}
+.explore-graph .node.current circle{fill:#fff0c2;stroke:#d69b16;stroke-width:4}
+.explore-graph .edge.considered line{stroke:#d69b16;stroke-width:4}
+.explore-graph .edge.selected line{stroke:#6557e8;stroke-width:5}
+.explore-graph .edge.considered rect{fill:#fff0c2}
+.explore-graph .edge.selected rect{fill:#e9e7ff}
+.explore-panel{display:grid;gap:18px;margin-top:20px}
+.explore-summary{display:flex;flex-wrap:wrap;gap:12px 20px;color:#667085;font-size:12px}
+.explore-summary span{display:inline-flex;align-items:center;gap:7px}
+.explore-summary i{width:11px;height:11px;border:2px solid #d69b16;border-radius:50%;background:#fff0c2}
+.explore-summary .explore-final-key{border-color:#6557e8;background:#e9e7ff}
+.explore-summary .explore-considered-key{border:0;border-radius:2px;background:#d69b16}
+.explore-summary .explore-path-key{border:0;border-radius:2px;background:#6557e8}
+.explore-distances{display:grid;grid-template-columns:repeat(auto-fit,minmax(82px,1fr));gap:10px}
+.explore-distance{display:flex;justify-content:space-between;align-items:center;padding:11px 13px;border:1px solid #e7eaf0;border-radius:10px;background:#fafbfc;color:#667085}
+.explore-distance.active{border-color:#d69b16;background:#fff9e8}
+.explore-distance strong{color:#222b3a}
+.explore-explanation{padding:16px 18px;border:1px solid #e7eaf0;border-radius:12px;background:#fafbfc}
+.explore-explanation>span{color:#6557e8;font-size:10px;font-weight:700;letter-spacing:.08em}
+.explore-explanation h3{margin:7px 0;color:#222b3a;font-size:16px}
+.explore-explanation p{margin:0;color:#667085;line-height:1.55}
+.explore-navigation{display:flex;justify-content:space-between;gap:10px}
+@media(max-width:520px){.explore-navigation{flex-wrap:wrap}.explore-navigation button{flex:1}}
